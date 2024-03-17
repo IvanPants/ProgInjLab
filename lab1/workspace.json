@@ -4,45 +4,45 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-javascript",
-  "lastModifiedDate" : "2024-03-12T16:58:00Z",
+  "lastModifiedDate" : "2024-03-17T18:32:41Z",
   "model" : {
     "deploymentNodes" : [ {
       "containerInstances" : [ {
         "containerId" : "3",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "17",
+        "id" : "21",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.69b85222-376b-4e0f-9627-8092c0cd8392.7afb8649-e012-4c20-87dc-d290dcbc2f2d"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.3659ce33-cc8a-4a97-bc31-dcbb8315417d.96feedbc-7635-46b1-8068-928f42f8ee98"
         },
         "relationships" : [ {
+          "description" : "Пользовательский запрос",
+          "destinationId" : "23",
+          "id" : "24",
+          "linkedRelationshipId" : "13",
+          "sourceId" : "21"
+        }, {
           "description" : "Пользовательский запрос в PtP сервис",
-          "destinationId" : "19",
-          "id" : "20",
-          "linkedRelationshipId" : "12",
-          "sourceId" : "17"
+          "destinationId" : "26",
+          "id" : "27",
+          "linkedRelationshipId" : "16",
+          "sourceId" : "21"
         }, {
           "description" : "Пользовательский запрос в chat сервис",
-          "destinationId" : "22",
-          "id" : "23",
-          "linkedRelationshipId" : "13",
-          "sourceId" : "17"
-        }, {
-          "description" : "Поиск/Добавление пользователя",
-          "destinationId" : "25",
-          "id" : "26",
-          "linkedRelationshipId" : "11",
-          "sourceId" : "17"
+          "destinationId" : "29",
+          "id" : "30",
+          "linkedRelationshipId" : "17",
+          "sourceId" : "21"
         } ],
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "16",
+      "id" : "20",
       "instances" : "1",
       "name" : "Пользовательский Сервис",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.69b85222-376b-4e0f-9627-8092c0cd8392"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.3659ce33-cc8a-4a97-bc31-dcbb8315417d"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -50,26 +50,32 @@
         "containerId" : "4",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "19",
+        "id" : "23",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.937433ed-c21c-4d25-b1dd-82eb232c04a7.b13bdf4a-c0c3-4c71-8ec3-499c9de14141"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.4d7f7bf6-2724-4059-9b14-ea4db4aa82e1.0c56c09d-a977-48b9-b15d-968d85030239"
         },
         "relationships" : [ {
-          "description" : "Запрос на получение данных PtP чата",
-          "destinationId" : "28",
-          "id" : "29",
+          "description" : "Поиск/Добавление пользователя",
+          "destinationId" : "32",
+          "id" : "33",
           "linkedRelationshipId" : "14",
-          "sourceId" : "19"
+          "sourceId" : "23"
+        }, {
+          "description" : "Поиск в кеше",
+          "destinationId" : "35",
+          "id" : "36",
+          "linkedRelationshipId" : "15",
+          "sourceId" : "23"
         } ],
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "18",
+      "id" : "22",
       "instances" : "1",
-      "name" : "PtP чат сервис",
+      "name" : "Сервис для определения пользователя",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.937433ed-c21c-4d25-b1dd-82eb232c04a7"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.4d7f7bf6-2724-4059-9b14-ea4db4aa82e1"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -77,26 +83,26 @@
         "containerId" : "5",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "22",
+        "id" : "26",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.84c65f6b-7a55-42a8-9ec7-a5d2e0de5481.c6fa4dfd-124d-46d9-acf7-490201501df5"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.72b5025d-28fe-4b1f-b399-c5c3d0469c3c.3202bbdf-4566-4cec-98d0-47ca9153e602"
         },
         "relationships" : [ {
-          "description" : "Запрос на получение данных чата",
-          "destinationId" : "31",
-          "id" : "32",
-          "linkedRelationshipId" : "15",
-          "sourceId" : "22"
+          "description" : "Запрос на получение данных PtP чата",
+          "destinationId" : "38",
+          "id" : "39",
+          "linkedRelationshipId" : "18",
+          "sourceId" : "26"
         } ],
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "21",
+      "id" : "25",
       "instances" : "1",
-      "name" : "Сервис для общего чата",
+      "name" : "PtP чат сервис",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.84c65f6b-7a55-42a8-9ec7-a5d2e0de5481"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.72b5025d-28fe-4b1f-b399-c5c3d0469c3c"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -104,19 +110,26 @@
         "containerId" : "6",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "25",
+        "id" : "29",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.e62f5e0e-a979-4583-b1e3-0f69660e3057.6d804f92-e793-4244-af52-9a9fe709185d"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.67357527-b6f1-49c8-aa36-bc7098514218.bedf3be4-1301-426e-b1d9-b36ead1b0215"
         },
+        "relationships" : [ {
+          "description" : "Запрос на получение данных чата",
+          "destinationId" : "41",
+          "id" : "42",
+          "linkedRelationshipId" : "19",
+          "sourceId" : "29"
+        } ],
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "24",
+      "id" : "28",
       "instances" : "1",
-      "name" : "БД пользователей",
+      "name" : "Сервис для общего чата",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.e62f5e0e-a979-4583-b1e3-0f69660e3057"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.67357527-b6f1-49c8-aa36-bc7098514218"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -124,19 +137,19 @@
         "containerId" : "7",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "28",
+        "id" : "32",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.2947aa70-146c-43e1-b799-813fb0560483.0718345a-e842-48ea-b5a1-30bf58503f95"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.8bea6809-82aa-491d-a49d-6ecb841aa0a7.ce647823-80e8-41fa-9a22-3d2e6197fe2b"
         },
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "27",
+      "id" : "31",
       "instances" : "1",
-      "name" : "БД PtP чата",
+      "name" : "БД пользователей",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.2947aa70-146c-43e1-b799-813fb0560483"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.8bea6809-82aa-491d-a49d-6ecb841aa0a7"
       },
       "tags" : "Element,Deployment Node"
     }, {
@@ -144,19 +157,59 @@
         "containerId" : "8",
         "deploymentGroups" : [ "Default" ],
         "environment" : "Deploy",
-        "id" : "31",
+        "id" : "35",
         "instanceId" : 1,
         "properties" : {
-          "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.8334660a-2b25-45d6-ac44-c4e35b5cfb51.05b76fa7-6567-4653-b3cc-05419513cf1c"
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.425ca8f8-ba42-45a5-96a7-93692c5b288a.06bec487-fc5c-4ec2-83f3-85998f83e6d2"
         },
         "tags" : "Container Instance"
       } ],
       "environment" : "Deploy",
-      "id" : "30",
+      "id" : "34",
+      "instances" : "1",
+      "name" : "Кеш",
+      "properties" : {
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.425ca8f8-ba42-45a5-96a7-93692c5b288a"
+      },
+      "tags" : "Element,Deployment Node"
+    }, {
+      "containerInstances" : [ {
+        "containerId" : "9",
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Deploy",
+        "id" : "38",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.5fb4d763-7ff1-4ec1-9855-210b468064c0.e846baf3-97b7-4a5a-a622-8abe391bcbae"
+        },
+        "tags" : "Container Instance"
+      } ],
+      "environment" : "Deploy",
+      "id" : "37",
+      "instances" : "1",
+      "name" : "БД PtP чата",
+      "properties" : {
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.5fb4d763-7ff1-4ec1-9855-210b468064c0"
+      },
+      "tags" : "Element,Deployment Node"
+    }, {
+      "containerInstances" : [ {
+        "containerId" : "10",
+        "deploymentGroups" : [ "Default" ],
+        "environment" : "Deploy",
+        "id" : "41",
+        "instanceId" : 1,
+        "properties" : {
+          "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.8eef7005-7306-443d-999e-bc9d50dcfd93.f6f3e9bd-8031-4366-87d5-4c963a3e30c9"
+        },
+        "tags" : "Container Instance"
+      } ],
+      "environment" : "Deploy",
+      "id" : "40",
       "instances" : "1",
       "name" : "БД общего чата",
       "properties" : {
-        "structurizr.dsl.identifier" : "d9650335-a90b-4de2-b560-9944d0b8159e.8334660a-2b25-45d6-ac44-c4e35b5cfb51"
+        "structurizr.dsl.identifier" : "7741622c-13fe-478b-80c5-4fe4b4894b14.8eef7005-7306-443d-999e-bc9d50dcfd93"
       },
       "tags" : "Element,Deployment Node"
     } ],
@@ -168,20 +221,20 @@
         "structurizr.dsl.identifier" : "user"
       },
       "relationships" : [ {
-        "description" : "Вход пользователя в систему",
+        "description" : "Подключение пользователя к сервису",
         "destinationId" : "2",
-        "id" : "9",
+        "id" : "11",
         "properties" : {
-          "structurizr.dsl.identifier" : "97e775f1-bfb6-4ff2-a9fd-33f01d6e0a72"
+          "structurizr.dsl.identifier" : "32e36734-e855-4728-b002-64e0418a1783"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
       }, {
-        "description" : "Вход пользователя в систему",
+        "description" : "Подключение пользователя к сервису",
         "destinationId" : "3",
-        "id" : "10",
+        "id" : "12",
         "properties" : {
-          "structurizr.dsl.identifier" : "72080798-1375-4baf-a5d5-c78a18bfdf74"
+          "structurizr.dsl.identifier" : "f52ad670-753a-44e5-950e-e1dabebd7002"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
@@ -200,29 +253,29 @@
           "structurizr.dsl.identifier" : "messenger.user_service"
         },
         "relationships" : [ {
-          "description" : "Поиск/Добавление пользователя",
-          "destinationId" : "6",
-          "id" : "11",
+          "description" : "Пользовательский запрос",
+          "destinationId" : "4",
+          "id" : "13",
           "properties" : {
-            "structurizr.dsl.identifier" : "f5fe757b-240f-42c3-acfe-98302cc6349f"
+            "structurizr.dsl.identifier" : "f86d4a8c-e057-40d6-8b5e-35ebe7b9bfc1"
           },
           "sourceId" : "3",
           "tags" : "Relationship"
         }, {
           "description" : "Пользовательский запрос в PtP сервис",
-          "destinationId" : "4",
-          "id" : "12",
+          "destinationId" : "5",
+          "id" : "16",
           "properties" : {
-            "structurizr.dsl.identifier" : "09ab947d-aa64-47ab-bd82-8f36e9aac52c"
+            "structurizr.dsl.identifier" : "b6a4f06b-b993-4ca1-b734-787bc858290a"
           },
           "sourceId" : "3",
           "tags" : "Relationship"
         }, {
           "description" : "Пользовательский запрос в chat сервис",
-          "destinationId" : "5",
-          "id" : "13",
+          "destinationId" : "6",
+          "id" : "17",
           "properties" : {
-            "structurizr.dsl.identifier" : "6919d9a3-7824-4846-a5a6-8871d2cdc6c1"
+            "structurizr.dsl.identifier" : "aabb1414-0774-4f67-a1b2-fedb970eae87"
           },
           "sourceId" : "3",
           "tags" : "Relationship"
@@ -231,16 +284,25 @@
       }, {
         "documentation" : { },
         "id" : "4",
-        "name" : "PtP чат",
+        "name" : "Сервис для определения пользователя",
         "properties" : {
-          "structurizr.dsl.identifier" : "messenger.ptp_service"
+          "structurizr.dsl.identifier" : "messenger.identify_user"
         },
         "relationships" : [ {
-          "description" : "Запрос на получение данных PtP чата",
+          "description" : "Поиск/Добавление пользователя",
           "destinationId" : "7",
           "id" : "14",
           "properties" : {
-            "structurizr.dsl.identifier" : "97444b55-d5c1-42ae-8e8b-4d5ccd119c97"
+            "structurizr.dsl.identifier" : "a712df6c-7d18-4471-bbbe-6d5b13366274"
+          },
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Поиск в кеше",
+          "destinationId" : "8",
+          "id" : "15",
+          "properties" : {
+            "structurizr.dsl.identifier" : "a558895d-b7e1-4fbd-a2e9-a050d24bb75e"
           },
           "sourceId" : "4",
           "tags" : "Relationship"
@@ -249,18 +311,36 @@
       }, {
         "documentation" : { },
         "id" : "5",
+        "name" : "PtP чат",
+        "properties" : {
+          "structurizr.dsl.identifier" : "messenger.ptp_service"
+        },
+        "relationships" : [ {
+          "description" : "Запрос на получение данных PtP чата",
+          "destinationId" : "9",
+          "id" : "18",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9c425631-edc3-4328-b352-5e91d9924300"
+          },
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container"
+      }, {
+        "documentation" : { },
+        "id" : "6",
         "name" : "Общий чат",
         "properties" : {
           "structurizr.dsl.identifier" : "messenger.chat_service"
         },
         "relationships" : [ {
           "description" : "Запрос на получение данных чата",
-          "destinationId" : "8",
-          "id" : "15",
+          "destinationId" : "10",
+          "id" : "19",
           "properties" : {
-            "structurizr.dsl.identifier" : "96a7663a-12ae-46a6-9ce6-36f0ac5bcc57"
+            "structurizr.dsl.identifier" : "d050ea47-ad3b-44c2-bf6f-5d60f4c7513e"
           },
-          "sourceId" : "5",
+          "sourceId" : "6",
           "tags" : "Relationship"
         } ],
         "tags" : "Element,Container"
@@ -268,7 +348,7 @@
         "description" : "База данных с пользователями",
         "documentation" : { },
         "group" : "Слой данных",
-        "id" : "6",
+        "id" : "7",
         "name" : "User Data",
         "properties" : {
           "structurizr.dsl.identifier" : "messenger.user_db"
@@ -276,28 +356,40 @@
         "tags" : "Element,Container,database",
         "technology" : "PostgreSQL"
       }, {
+        "description" : "Кеш пользовательских данных",
+        "documentation" : { },
+        "group" : "Слой данных",
+        "id" : "8",
+        "name" : "cache",
+        "properties" : {
+          "structurizr.dsl.identifier" : "messenger.user_cash"
+        },
+        "tags" : "Element,Container,cache",
+        "technology" : "PostgreSQL"
+      }, {
         "description" : "PtP база данных",
         "documentation" : { },
         "group" : "Слой данных",
-        "id" : "7",
+        "id" : "9",
         "name" : "PtP Data",
         "properties" : {
           "structurizr.dsl.identifier" : "messenger.ptp_db"
         },
         "tags" : "Element,Container,database",
-        "technology" : "PostgreSQL"
+        "technology" : "MongoDB"
       }, {
         "description" : "База данных общего чата",
         "documentation" : { },
         "group" : "Слой данных",
-        "id" : "8",
+        "id" : "10",
         "name" : "Chat Data",
         "properties" : {
           "structurizr.dsl.identifier" : "messenger.chat_db"
         },
         "tags" : "Element,Container,database",
-        "technology" : "PostgreSQL"
+        "technology" : "MongoDB"
       } ],
+      "description" : "Сервия для работы с данными пользователя (БД/КЕШ)",
       "documentation" : { },
       "id" : "2",
       "location" : "Unspecified",
@@ -310,7 +402,7 @@
   },
   "name" : "Name",
   "properties" : {
-    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewogICAgICAgIHByb3BlcnRpZXMgeyAKICAgICAgICAgICAgc3RydWN0dXJpenIuZ3JvdXBTZXBhcmF0b3IgIi8iCiAgICAgICAgfQogICAgICAgIHVzZXIgPSBwZXJzb24gItCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRjCIKICAgICAgICBtZXNzZW5nZXIgPSBzb2Z0d2FyZVN5c3RlbSAi0JzQtdGB0YHQtdC90LTQttC10YAiIHsKCiAgICAgICAgICAgIHVzZXJfc2VydmljZSA9IGNvbnRhaW5lciAi0KHQtdGA0LLQuNGBINC00LvRjyDQstC30LDQuNC80L7QtNC10LnRgdGC0LLQuNGPINGBINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC8IiAKICAgICAgICAgICAgcHRwX3NlcnZpY2UgPSBjb250YWluZXIgIlB0UCDRh9Cw0YIiIAogICAgICAgICAgICBjaGF0X3NlcnZpY2UgPSBjb250YWluZXIgItCe0LHRidC40Lkg0YfQsNGCIiAKICAgICAgICAgICAgZ3JvdXAgItCh0LvQvtC5INC00LDQvdC90YvRhSJ7CiAgICAgICAgICAgICAgICB1c2VyX2RiID0gY29udGFpbmVyICJVc2VyIERhdGEiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAi0JHQsNC30LAg0LTQsNC90L3Ri9GFINGBINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRj9C80LgiCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIHB0cF9kYiA9IGNvbnRhaW5lciAiUHRQIERhdGEiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiUHRQINCx0LDQt9CwINC00LDQvdC90YvRhSIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgY2hhdF9kYiA9IGNvbnRhaW5lciAiQ2hhdCBEYXRhIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCR0LDQt9CwINC00LDQvdC90YvRhSDQvtCx0YnQtdCz0L4g0YfQsNGC0LAiCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyICLQktGF0L7QtCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0YHQuNGB0YLQtdC80YMiCgogICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0JLRhdC+0LQg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINCyINGB0LjRgdGC0LXQvNGDIgogICAgICAgIAogICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLnVzZXJfZGIgItCf0L7QuNGB0Lov0JTQvtCx0LDQstC70LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLnB0cF9zZXJ2aWNlICLQn9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60LjQuSDQt9Cw0L/RgNC+0YEg0LIgUHRQINGB0LXRgNCy0LjRgSIKICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgItCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRjNGB0LrQuNC5INC30LDQv9GA0L7RgSDQsiBjaGF0INGB0LXRgNCy0LjRgSIKCiAgICAgICAgbWVzc2VuZ2VyLnB0cF9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5wdHBfZGIgItCX0LDQv9GA0L7RgSDQvdCwINC/0L7Qu9GD0YfQtdC90LjQtSDQtNCw0L3QvdGL0YUgUHRQINGH0LDRgtCwIgogICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItCX0LDQv9GA0L7RgSDQvdCwINC/0L7Qu9GD0YfQtdC90LjQtSDQtNCw0L3QvdGL0YUg0YfQsNGC0LAiCiAgICAgICAgCiAgICAgICAgLy8gbWFzc2FuZ2VyLnVzZXJfc2VydmljZS51c2VyX2FwaSAtPiBtYXNzYW5nZXIudXNlcl9kYiAi0J/QvtC40YHQui/QlNC+0LHQsNCy0LvQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgLy8gbWFzc2FuZ2VyLnVzZXJfc2VydmljZS5zZW5kX21lc3NhZ2VfYXBpIC0+IG1lc3Nlbmdlci5wdHBfc2VydmljZQoKICAgICAgICBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkRlcGxveSIgewogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0J/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC40Lkg0KHQtdGA0LLQuNGBIiB7CiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlB0UCDRh9Cw0YIg0YHQtdGA0LLQuNGBIiB7CiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBtZXNzZW5nZXIucHRwX3NlcnZpY2UKICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0KHQtdGA0LLQuNGBINC00LvRjyDQvtCx0YnQtdCz0L4g0YfQsNGC0LAiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UKICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0JHQlCDQv9C+0LvRjNC30L7QstCw0YLQtdC70LXQuSIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLnVzZXJfZGIKICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0JHQlCBQdFAg0YfQsNGC0LAiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIG1lc3Nlbmdlci5wdHBfZGIKICAgICAgICAgICAgfQogICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAi0JHQlCDQvtCx0YnQtdCz0L4g0YfQsNGC0LAiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIG1lc3Nlbmdlci5jaGF0X2RiCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICB0aGVtZXMgZGVmYXVsdAogICAgICAgIAogICAgICAgIHN5c3RlbUNvbnRleHQgbWVzc2VuZ2VyIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBtZXNzZW5nZXIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBtZXNzZW5nZXIgIlVDMDEiICLQlNC+0LHQsNCy0LvQtdC90LjQtSDQvdC+0LLQvtCz0L4g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlICLQodC+0LfQtNCw0YLRjCDQvdC+0LLQvtCz0L4g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIChQT1NUIC91c2VyKSIKICAgICAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIudXNlcl9kYiAi0JTQvtCx0LDQstC40YLRjCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0LHQsNC30YMsINC10YHQu9C4INC10LPQviDQvdC10YLRgyIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzAyIiAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQu9C+0LPQuNC90YMiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCd0LDQudGC0Lgg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINC/0L4g0LvQvtCz0LjQvdGDIChHRVQgL3VzZXIpIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci51c2VyX2RiICLQndCw0LnRgtC4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQsiDQsdC0INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5IgogICAgICAgIH0KCiAgICAgICAgZHluYW1pYyBtZXNzZW5nZXIgIlVDMDMiICLQn9C+0LjRgdC6INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQv9C+INC80LDRgdC60LUg0LjQvNGPINC4INGE0LDQvNC40LvQuNC4IiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlICLQndCw0LnRgtC4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQv9C+INC80LDRgdC60LUgKEdFVCAvdXNlcikiCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLnVzZXJfZGIgItCd0LDQudGC0Lgg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINCyINCx0LQg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10LkiCiAgICAgICAgfQoKICAgICAgICBkeW5hbWljIG1lc3NlbmdlciAiVUMxMSIgItCh0L7Qt9C00LDQvdC40LUg0LPRgNGD0L/Qv9C+0LLQvtCz0L4g0YfQsNGC0LAiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAi0JfQsNC/0YDQvtGBINC90LAg0YHQvtC30LTQsNC90LjQtSDQs9GA0YPQv9C+0LLQvtCz0L4g0YfQsNGC0LAiCiAgICAgICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItCh0L7Qt9C00LDQvdC40LUg0LPRgNGD0L/Qv9C+0LLQvtCz0L7Rh9Cw0YLQsCDQuCDRgdC+0YXRgNCw0L3QtdC90LjQtSDQsiDQsdC0IgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzEyIiAi0JTQvtCx0LDQstC70LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINCyINCz0YDRg9C/0L/QvtCy0L7QuSDRh9Cw0YIiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAi0JfQsNC/0YDQvtGBINC90LAg0LTQvtCx0LDQstC70LXQvdC40LUg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINCyINCz0YDRg9C/0L/QvtCy0L7QuSDRh9Cw0YIiCiAgICAgICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItCU0L7QsdCw0LLQu9C10L3QuNC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQsiDQs9GA0YPQv9C/0L7QstC+0Lkg0YfQsNGCIgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzEzIiAi0JTQvtCx0LDQstC70LXQvdC40LUg0YHQvtC+0LHRidC10L3QuNGPINCyINCz0YDRg9C/0L/QvtCy0L7QuSDRh9Cw0YIiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAi0JfQsNC/0YDQvtGBINC90LAg0LTQvtCx0LDQstC70LXQvdC40LUg0YHQvtC+0LHRidC10L3QuNGPINCyINCz0YDRg9C/0L7QstC+0LPQviDRh9Cw0YIiCiAgICAgICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItC00L7QsdCw0LLQu9C10L3QuNC1INGB0L7QvtCx0YnQtdC90LjRjyDQsiDQs9GA0YPQv9C+0LLQvtCz0L4g0YfQsNGCIgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzE0IiAi0JfQsNCz0YDRg9C30LrQsCDRgdC+0L7QsdGJ0LXQvdC40Lkg0LPRgNGD0L/Qv9C+0LLQvtCz0L4g0YfQsNGC0LAiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAKICAgICAgICAgICAgbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9kYiAi0LfQsNCz0YDRg9C30LrQsCDRgdC+0L7QsdGJ0LXQvdC40Y8g0LjQtyDQsdC0IgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzIxIiAi0J7RgtC/0YDQsNCy0LrQsCBQdFAg0KHQvtC+0LHRidC10L3QuNC5INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjiIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0JDRg9C90YLQuNGE0LjQutCw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyIKICAgICAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlIAogICAgICAgICAgICBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X2RiIAogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzIyIiAi0L/QvtC70YPRh9C10L3QuNC1IFB0UCDRgdC/0LjRgdC60LAg0YHQvtC+0LHRidC10L3QuNGPINC00LvRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAKICAgICAgICAgICAgbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9kYiAi0J/QvtC70YPRh9C10L3QuNC1IFB0UCDRgdC/0LjRgdC60LAiCiAgICAgICAgfQoKICAgICAgICBkZXBsb3ltZW50IG1lc3NlbmdlciAiRGVwbG95IiAiZGVwbG95bWVudCIgewogICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgfQogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgImRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBjeWxpbmRlcgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjNzdmZjQ0CiAgICAgICAgICAgICAgICBjb2xvciAjMDAwMDAwCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cgp9Cg=="
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewogICAgICAgIHByb3BlcnRpZXMgeyAKICAgICAgICAgICAgc3RydWN0dXJpenIuZ3JvdXBTZXBhcmF0b3IgIi8iCiAgICAgICAgfQogICAgICAgIHVzZXIgPSBwZXJzb24gItCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRjCIKICAgICAgICBtZXNzZW5nZXIgPSBzb2Z0d2FyZVN5c3RlbSAi0JzQtdGB0YHQtdC90LTQttC10YAiIHsKCiAgICAgICAgICAgIHVzZXJfc2VydmljZSA9IGNvbnRhaW5lciAi0KHQtdGA0LLQuNGBINC00LvRjyDQstC30LDQuNC80L7QtNC10LnRgdGC0LLQuNGPINGBINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC8IgogICAgICAgICAgICBpZGVudGlmeV91c2VyID0gY29udGFpbmVyICLQodC10YDQstC40YEg0LTQu9GPINC+0L/RgNC10LTQtdC70LXQvdC40Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiAKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQodC10YDQstC40Y8g0LTQu9GPINGA0LDQsdC+0YLRiyDRgSDQtNCw0L3QvdGL0LzQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8gKNCR0JQv0JrQldCoKSIKICAgICAgICAgICAgCiAgICAgICAgICAgIHB0cF9zZXJ2aWNlID0gY29udGFpbmVyICJQdFAg0YfQsNGCIiAKICAgICAgICAgICAgY2hhdF9zZXJ2aWNlID0gY29udGFpbmVyICLQntCx0YnQuNC5INGH0LDRgiIgCgogICAgICAgICAgICBncm91cCAi0KHQu9C+0Lkg0LTQsNC90L3Ri9GFInsKICAgICAgICAgICAgICAgIHVzZXJfZGIgPSBjb250YWluZXIgIlVzZXIgRGF0YSIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQkdCw0LfQsCDQtNCw0L3QvdGL0YUg0YEg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GP0LzQuCIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgdXNlcl9jYXNoID0gY29udGFpbmVyICJjYWNoZSIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gItCa0LXRiCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60LjRhSDQtNCw0L3QvdGL0YUiCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJQb3N0Z3JlU1FMIgogICAgICAgICAgICAgICAgdGFncyAiY2FjaGUiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBwdHBfZGIgPSBjb250YWluZXIgIlB0UCBEYXRhIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlB0UCDQsdCw0LfQsCDQtNCw0L3QvdGL0YUiCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiTW9uZ29EQiIKICAgICAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGNoYXRfZGIgPSBjb250YWluZXIgIkNoYXQgRGF0YSIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICLQkdCw0LfQsCDQtNCw0L3QvdGL0YUg0L7QsdGJ0LXQs9C+INGH0LDRgtCwIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIk1vbmdvREIiCiAgICAgICAgICAgICAgICAgICAgdGFncyAiZGF0YWJhc2UiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KCiAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICB1c2VyIC0+IG1lc3NlbmdlciAi0J/QvtC00LrQu9GO0YfQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0Log0YHQtdGA0LLQuNGB0YMiCgogICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0J/QvtC00LrQu9GO0YfQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0Log0YHQtdGA0LLQuNGB0YMiCiAgICAgICAgCiAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIuaWRlbnRpZnlfdXNlciAi0J/QvtC70YzQt9C+0LLQsNGC0LXQu9GM0YHQutC40Lkg0LfQsNC/0YDQvtGBIgogICAgICAgIG1lc3Nlbmdlci5pZGVudGlmeV91c2VyIC0+IG1lc3Nlbmdlci51c2VyX2RiICLQn9C+0LjRgdC6L9CU0L7QsdCw0LLQu9C10L3QuNC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyIKICAgICAgICBtZXNzZW5nZXIuaWRlbnRpZnlfdXNlciAtPiBtZXNzZW5nZXIudXNlcl9jYXNoICLQn9C+0LjRgdC6INCyINC60LXRiNC1IgogICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLnB0cF9zZXJ2aWNlICLQn9C+0LvRjNC30L7QstCw0YLQtdC70YzRgdC60LjQuSDQt9Cw0L/RgNC+0YEg0LIgUHRQINGB0LXRgNCy0LjRgSIKICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgItCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRjNGB0LrQuNC5INC30LDQv9GA0L7RgSDQsiBjaGF0INGB0LXRgNCy0LjRgSIKICAgICAgICBtZXNzZW5nZXIucHRwX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLnB0cF9kYiAi0JfQsNC/0YDQvtGBINC90LAg0L/QvtC70YPRh9C10L3QuNC1INC00LDQvdC90YvRhSBQdFAg0YfQsNGC0LAiCiAgICAgICAgbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9kYiAi0JfQsNC/0YDQvtGBINC90LAg0L/QvtC70YPRh9C10L3QuNC1INC00LDQvdC90YvRhSDRh9Cw0YLQsCIKICAgICAgICAKCiAgICAgICAgZGVwbG95bWVudEVudmlyb25tZW50ICJEZXBsb3kiIHsKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgItCf0L7Qu9GM0LfQvtCy0LDRgtC10LvRjNGB0LrQuNC5INCh0LXRgNCy0LjRgSIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLnVzZXJfc2VydmljZQogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICLQodC10YDQstC40YEg0LTQu9GPINC+0L/RgNC10LTQtdC70LXQvdC40Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiB7CiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBtZXNzZW5nZXIuaWRlbnRpZnlfdXNlcgogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJQdFAg0YfQsNGCINGB0LXRgNCy0LjRgSIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLnB0cF9zZXJ2aWNlCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgItCh0LXRgNCy0LjRgSDQtNC70Y8g0L7QsdGJ0LXQs9C+INGH0LDRgtCwIiB7CiAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgItCR0JQg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10LkiIHsKICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIG1lc3Nlbmdlci51c2VyX2RiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgItCa0LXRiCIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLnVzZXJfY2FzaAogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICLQkdCUIFB0UCDRh9Cw0YLQsCIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLnB0cF9kYgogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICLQkdCUINC+0LHRidC10LPQviDRh9Cw0YLQsCIgewogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgbWVzc2VuZ2VyLmNoYXRfZGIKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHRoZW1lcyBkZWZhdWx0CiAgICAgICAgCiAgICAgICAgc3lzdGVtQ29udGV4dCBtZXNzZW5nZXIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIG1lc3NlbmdlciB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgfQoKICAgICAgICBkeW5hbWljIG1lc3NlbmdlciAiVUMwMSIgItCU0L7QsdCw0LLQu9C10L3QuNC1INC90L7QstC+0LPQviDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCh0L7Qt9C00LDRgtGMINC90L7QstC+0LPQviDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8gKFBPU1QgL3VzZXIpIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5pZGVudGlmeV91c2VyICLQv9GA0L7QstC10YDRj9C10Lwg0YHQstC+0LHQvtC00LjQvSDQu9C4INC70L7Qs9C40L0iCiAgICAgICAgICAgIG1lc3Nlbmdlci5pZGVudGlmeV91c2VyIC0+IG1lc3Nlbmdlci51c2VyX2RiICLQl9Cw0L3QtdGB0YLQuCDQtNCw0L3QvdGL0LUg0LIg0LHQtCIKICAgICAgICAgICAgbWVzc2VuZ2VyLmlkZW50aWZ5X3VzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfY2FzaCAi0JfQsNC90LXRgdGC0Lgg0LTQsNC90L3Ri9C1INCyINC60LXRiCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzAyIiAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQu9C+0LPQuNC90YMiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCd0LDQudGC0Lgg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPINC/0L4g0LvQvtCz0LjQvdGDIChHRVQgL3VzZXIpIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5pZGVudGlmeV91c2VyIAogICAgICAgICAgICBtZXNzZW5nZXIuaWRlbnRpZnlfdXNlciAtPiBtZXNzZW5nZXIudXNlcl9jYXNoICLQndCw0LnRgtC4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQsiDQutC10YjQtSIKICAgICAgICAgICAgbWVzc2VuZ2VyLmlkZW50aWZ5X3VzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfZGIgItCV0YHQu9C4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjCDQvdC1INC90LDQudC00LXQvSDQsiDQutC10YjQtSwg0J3QsNC50YLQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0LHQtCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzAzIiAi0J/QvtC40YHQuiDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQvNCw0YHQutC1INC40LzRjyDQuCDRhNCw0LzQuNC70LjQuCIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0J3QsNC50YLQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0L/QviDQvNCw0YHQutC1IChHRVQgL3VzZXIpIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5pZGVudGlmeV91c2VyIAogICAgICAgICAgICBtZXNzZW5nZXIuaWRlbnRpZnlfdXNlciAtPiBtZXNzZW5nZXIudXNlcl9jYXNoICLQndCw0LnRgtC4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQsiDQutC10YjQtSIKICAgICAgICAgICAgbWVzc2VuZ2VyLmlkZW50aWZ5X3VzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfZGIgItCV0YHQu9C4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjCDQvdC1INC90LDQudC00LXQvSDQsiDQutC10YjQtSwg0J3QsNC50YLQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0LHQtCIKICAgICAgICB9CgogICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzExIiAi0KHQvtC30LTQsNC90LjQtSDQs9GA0YPQv9C/0L7QstC+0LPQviDRh9Cw0YLQsCIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAKICAgICAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlICLQodC+0LfQtNCw0YLRjCDRh9Cw0YIgKFBPU1QgL3VzZXJzX2NoYXQpIgogICAgICAgICAgICBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X2RiICJD0L7RhdGA0LDQvdC10L3QuNGC0Ywg0YfQsNGCINCyINCx0LQiCiAgICAgICAgfQoKICAgICAgICAgICAgZHluYW1pYyBtZXNzZW5nZXIgIlVDMTIiICLQlNC+0LHQsNCy0LvQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0LPRgNGD0L/Qv9C+0LLQvtC5INGH0LDRgiIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0JDRg9C90YLQuNGE0LjQutCw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyIKICAgICAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlICLQlNC+0LHQsNCy0LvQtdC90LjQtSDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8g0LIg0LPRgNGD0L/QvtCy0L7QuSDRh9Cw0YIgKFBPU1QgL3VzZXIvdXNlcnNfY2hhdCkiCiAgICAgICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItCh0L7RhdGA0LDQvdC40YLRjCDQuNC30LzQtdC90LXQvdC40Y8g0LIg0LHQtCIKICAgICAgICB9CgogICAgICAgICAgICBkeW5hbWljIG1lc3NlbmdlciAiVUMxMyIgItCU0L7QsdCw0LLQu9C10L3QuNC1INGB0L7QvtCx0YnQtdC90LjRjyDQsiDQs9GA0YPQv9C/0L7QstC+0Lkg0YfQsNGCIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlICLQkNGD0L3RgtC40YTQuNC60LDRhtC40Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgItCV0YHQu9C4INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjCDQtdGB0YLRjCDQsiDRh9Cw0YLQtSwg0LTQvtCx0LDQstC40YLRjCDRgdC+0L7QsdGJ0LXQvdC40LUg0LIg0LPRgNGD0L/QvtCy0L7QuSDRh9Cw0YIgKFBPU1QgdXNlci91c2VyX2NoYXQvbWVzc2FnZSkiCiAgICAgICAgICAgIG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfZGIgItCh0L7RhdGA0LDQvdC40YLRjCDQsiDQkdCUIgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzE0IiAi0JfQsNCz0YDRg9C30LrQsCDRgdC+0L7QsdGJ0LXQvdC40Lkg0LPRgNGD0L/Qv9C+0LLQvtCz0L4g0YfQsNGC0LAiIHsKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICB1c2VyIC0+IG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgItCQ0YPQvdGC0LjRhNC40LrQsNGG0LjRjyDQv9C+0LvRjNC30L7QstCw0YLQtdC70Y8iCiAgICAgICAgICAgIG1lc3Nlbmdlci51c2VyX3NlcnZpY2UgLT4gbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAi0J/QvtC40YHQuiDRgdC+0L7QsdGJ0LXQvdC40Lkg0YfQsNGC0LAgKEdFVCB1c2VyL3VzZXJfY2hhdC9tZXNzYWdlKSIKICAgICAgICAgICAgbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9kYiAi0LfQsNCz0YDRg9C30LrQsCDRgdC+0L7QsdGJ0LXQvdC40Lkg0LjQtyDQsdC0IgogICAgICAgIH0KCiAgICAgICAgICAgIGR5bmFtaWMgbWVzc2VuZ2VyICJVQzIxIiAi0J7RgtC/0YDQsNCy0LrQsCBQdFAg0KHQvtC+0LHRidC10L3QuNC5INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjiIgewogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIHVzZXIgLT4gbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAi0JDRg9C90YLQuNGE0LjQutCw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyIKICAgICAgICAgICAgbWVzc2VuZ2VyLnVzZXJfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlICLQldGB0LvQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70Ywg0LXRgdGC0Ywg0LIgUHRQINGH0LDRgtC1LCDQtNC+0LHQsNCy0LjRgtGMINGB0L7QvtCx0YnQtdC90LjQtSDQsiDQs9GA0YPQv9C+0LLQvtC5INGH0LDRgiAoUE9TVCB1c2VyL3B0cF9jaGF0L21lc3NhZ2UpIgogICAgICAgICAgICBtZXNzZW5nZXIuY2hhdF9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X2RiICLQodC+0YXRgNCw0L3QuNGC0Ywg0LIg0LHQtCIKICAgICAgICB9CgogICAgICAgICAgICBkeW5hbWljIG1lc3NlbmdlciAiVUMyMiIgItC/0L7Qu9GD0YfQtdC90LjQtSBQdFAg0YHQv9C40YHQutCwINGB0L7QvtCx0YnQtdC90LjRjyDQtNC70Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIiB7CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgdXNlciAtPiBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlICLQkNGD0L3RgtC40YTQuNC60LDRhtC40Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIgogICAgICAgICAgICBtZXNzZW5nZXIudXNlcl9zZXJ2aWNlIC0+IG1lc3Nlbmdlci5jaGF0X3NlcnZpY2UgItCf0L7QuNGB0Log0YHQvtC+0LHRidC10L3QuNC5INGH0LDRgtCwIChHRVQgdXNlci9wdHBfY2hhdC9tZXNzYWdlKSIKICAgICAgICAgICAgbWVzc2VuZ2VyLmNoYXRfc2VydmljZSAtPiBtZXNzZW5nZXIuY2hhdF9kYiAi0LfQsNCz0YDRg9C30LrQsCDRgdC+0L7QsdGJ0LXQvdC40Lkg0LjQtyDQsdC0IgogICAgICAgIH0KCiAgICAgICAgZGVwbG95bWVudCBtZXNzZW5nZXIgIkRlcGxveSIgImRlcGxveW1lbnQiIHsKICAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgIH0KCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiZGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM3N2ZmNDQKICAgICAgICAgICAgICAgIGNvbG9yICMwMDAwMDAKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJjYWNoZSIgewogICAgICAgICAgICBzaGFwZSBjeWxpbmRlcgogICAgICAgICAgICBiYWNrZ3JvdW5kICNDREZGNDQKICAgICAgICAgICAgY29sb3IgIzAwMDAwMAogICAgICAgICAgICB9CgogICAgICAgIH0KICAgIH0KCn0K"
   },
   "views" : {
     "configuration" : {
@@ -323,6 +415,11 @@
           "color" : "#000000",
           "shape" : "Cylinder",
           "tag" : "database"
+        }, {
+          "background" : "#cdff44",
+          "color" : "#000000",
+          "shape" : "Cylinder",
+          "tag" : "cache"
         } ]
       },
       "terminology" : { },
@@ -340,35 +437,43 @@
       },
       "dimensions" : {
         "height" : 2665,
-        "width" : 2430
+        "width" : 3180
       },
       "elements" : [ {
         "id" : "1",
-        "x" : 990,
+        "x" : 1739,
         "y" : 200
       }, {
         "id" : "3",
-        "x" : 990,
+        "x" : 1739,
         "y" : 800
       }, {
         "id" : "4",
-        "x" : 990,
+        "x" : 989,
         "y" : 1400
       }, {
         "id" : "5",
-        "x" : 1740,
+        "x" : 1739,
         "y" : 1400
       }, {
         "id" : "6",
-        "x" : 240,
-        "y" : 2000
+        "x" : 2489,
+        "y" : 1400
       }, {
         "id" : "7",
-        "x" : 990,
+        "x" : 239,
         "y" : 2000
       }, {
         "id" : "8",
-        "x" : 1740,
+        "x" : 989,
+        "y" : 2000
+      }, {
+        "id" : "9",
+        "x" : 1739,
+        "y" : 2000
+      }, {
+        "id" : "10",
+        "x" : 2489,
         "y" : 2000
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
@@ -376,14 +481,6 @@
       "key" : "Container-001",
       "order" : 2,
       "relationships" : [ {
-        "id" : "10"
-      }, {
-        "id" : "11",
-        "vertices" : [ {
-          "x" : 840,
-          "y" : 1400
-        } ]
-      }, {
         "id" : "12"
       }, {
         "id" : "13"
@@ -391,6 +488,14 @@
         "id" : "14"
       }, {
         "id" : "15"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "17"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "19"
       } ],
       "softwareSystemId" : "2"
     } ],
@@ -406,70 +511,90 @@
       },
       "dimensions" : {
         "height" : 2011,
-        "width" : 2390
+        "width" : 3140
       },
       "elements" : [ {
-        "id" : "16",
+        "id" : "20",
         "x" : 175,
         "y" : 175
-      }, {
-        "id" : "17",
-        "x" : 970,
-        "y" : 220
-      }, {
-        "id" : "18",
-        "x" : 175,
-        "y" : 175
-      }, {
-        "id" : "19",
-        "x" : 220,
-        "y" : 820
       }, {
         "id" : "21",
-        "x" : 175,
-        "y" : 175
+        "x" : 1720,
+        "y" : 219
       }, {
         "id" : "22",
-        "x" : 970,
-        "y" : 820
-      }, {
-        "id" : "24",
         "x" : 175,
         "y" : 175
+      }, {
+        "id" : "23",
+        "x" : 970,
+        "y" : 819
       }, {
         "id" : "25",
-        "x" : 1720,
-        "y" : 820
-      }, {
-        "id" : "27",
         "x" : 175,
         "y" : 175
+      }, {
+        "id" : "26",
+        "x" : 1720,
+        "y" : 819
       }, {
         "id" : "28",
-        "x" : 220,
-        "y" : 1420
-      }, {
-        "id" : "30",
         "x" : 175,
         "y" : 175
       }, {
+        "id" : "29",
+        "x" : 2470,
+        "y" : 819
+      }, {
         "id" : "31",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "32",
+        "x" : 220,
+        "y" : 1419
+      }, {
+        "id" : "34",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "35",
         "x" : 970,
-        "y" : 1420
+        "y" : 1419
+      }, {
+        "id" : "37",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "38",
+        "x" : 1720,
+        "y" : 1419
+      }, {
+        "id" : "40",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "41",
+        "x" : 2470,
+        "y" : 1419
       } ],
       "environment" : "Deploy",
       "key" : "deployment",
       "order" : 12,
       "relationships" : [ {
-        "id" : "20"
+        "id" : "24"
       }, {
-        "id" : "23"
+        "id" : "27"
       }, {
-        "id" : "26"
+        "id" : "30"
       }, {
-        "id" : "29"
+        "id" : "33"
       }, {
-        "id" : "32"
+        "id" : "36"
+      }, {
+        "id" : "39"
+      }, {
+        "id" : "42"
       } ],
       "softwareSystemId" : "2"
     } ],
@@ -485,35 +610,53 @@
       },
       "description" : "Добавление нового пользователя",
       "dimensions" : {
-        "height" : 2065,
-        "width" : 930
+        "height" : 2665,
+        "width" : 1680
       },
       "elementId" : "2",
       "elements" : [ {
         "id" : "1",
-        "x" : 240,
-        "y" : 199
+        "x" : 614,
+        "y" : 200
       }, {
         "id" : "3",
-        "x" : 240,
-        "y" : 799
+        "x" : 614,
+        "y" : 800
       }, {
-        "id" : "6",
-        "x" : 240,
-        "y" : 1399
+        "id" : "4",
+        "x" : 614,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 989,
+        "y" : 2000
+      }, {
+        "id" : "8",
+        "x" : 239,
+        "y" : 2000
       } ],
       "externalBoundariesVisible" : false,
       "key" : "UC01",
       "order" : 3,
       "relationships" : [ {
         "description" : "Создать нового пользователя (POST /user)",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Добавить пользователя в базу, если его нету",
-        "id" : "11",
+        "description" : "проверяем свободин ли логин",
+        "id" : "13",
         "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Занести данные в бд",
+        "id" : "14",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Занести данные в кеш",
+        "id" : "15",
+        "order" : "4",
         "response" : false
       } ]
     }, {
@@ -528,35 +671,52 @@
       },
       "description" : "Поиск пользователя по логину",
       "dimensions" : {
-        "height" : 2065,
-        "width" : 930
+        "height" : 2665,
+        "width" : 1680
       },
       "elementId" : "2",
       "elements" : [ {
         "id" : "1",
-        "x" : 240,
-        "y" : 199
+        "x" : 614,
+        "y" : 200
       }, {
         "id" : "3",
-        "x" : 240,
-        "y" : 799
+        "x" : 614,
+        "y" : 800
       }, {
-        "id" : "6",
-        "x" : 240,
-        "y" : 1399
+        "id" : "4",
+        "x" : 614,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 989,
+        "y" : 2000
+      }, {
+        "id" : "8",
+        "x" : 239,
+        "y" : 2000
       } ],
       "externalBoundariesVisible" : false,
       "key" : "UC02",
       "order" : 4,
       "relationships" : [ {
         "description" : "Найти пользователя по логину (GET /user)",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Найти пользователя в бд пользователей",
-        "id" : "11",
+        "id" : "13",
         "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Найти пользователя в кеше",
+        "id" : "15",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Если пользователь не найден в кеше, Найти пользователя в бд",
+        "id" : "14",
+        "order" : "4",
         "response" : false
       } ]
     }, {
@@ -571,35 +731,52 @@
       },
       "description" : "Поиск пользователя по маске имя и фамилии",
       "dimensions" : {
-        "height" : 2065,
-        "width" : 930
+        "height" : 2665,
+        "width" : 1680
       },
       "elementId" : "2",
       "elements" : [ {
         "id" : "1",
-        "x" : 240,
-        "y" : 199
+        "x" : 614,
+        "y" : 200
       }, {
         "id" : "3",
-        "x" : 240,
-        "y" : 799
+        "x" : 614,
+        "y" : 800
       }, {
-        "id" : "6",
-        "x" : 240,
-        "y" : 1399
+        "id" : "4",
+        "x" : 614,
+        "y" : 1400
+      }, {
+        "id" : "7",
+        "x" : 989,
+        "y" : 2000
+      }, {
+        "id" : "8",
+        "x" : 239,
+        "y" : 2000
       } ],
       "externalBoundariesVisible" : false,
       "key" : "UC03",
       "order" : 5,
       "relationships" : [ {
         "description" : "Найти пользователя по маске (GET /user)",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Найти пользователя в бд пользователей",
-        "id" : "11",
+        "id" : "13",
         "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Найти пользователя в кеше",
+        "id" : "15",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Если пользователь не найден в кеше, Найти пользователя в бд",
+        "id" : "14",
+        "order" : "4",
         "response" : false
       } ]
     }, {
@@ -627,11 +804,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -639,18 +816,17 @@
       "key" : "UC11",
       "order" : 6,
       "relationships" : [ {
-        "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Запрос на создание групового чата",
-        "id" : "13",
+        "description" : "Создать чат (POST /users_chat)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "description" : "Создание групповогочата и сохранение в бд",
-        "id" : "15",
+        "description" : "Cохраненить чат в бд",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -679,11 +855,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -692,17 +868,17 @@
       "order" : 7,
       "relationships" : [ {
         "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Запрос на добавление пользователя в групповой чат",
-        "id" : "13",
+        "description" : "Добавление пользователя в груповой чат (POST /user/users_chat)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "description" : "Добавление пользователя в групповой чат",
-        "id" : "15",
+        "description" : "Сохранить изменения в бд",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -731,11 +907,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -744,17 +920,17 @@
       "order" : 8,
       "relationships" : [ {
         "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "description" : "Запрос на добавление сообщения в групового чат",
-        "id" : "13",
+        "description" : "Если пользователь есть в чате, добавить сообщение в груповой чат (POST user/user_chat/message)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "description" : "добавление сообщения в групового чат",
-        "id" : "15",
+        "description" : "Сохранить в БД",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -783,11 +959,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -796,16 +972,17 @@
       "order" : 9,
       "relationships" : [ {
         "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "id" : "13",
+        "description" : "Поиск сообщений чата (GET user/user_chat/message)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "description" : "загрузка сообщения из бд",
-        "id" : "15",
+        "description" : "загрузка сообщений из бд",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -834,11 +1011,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -847,15 +1024,17 @@
       "order" : 10,
       "relationships" : [ {
         "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "id" : "13",
+        "description" : "Если пользователь есть в PtP чате, добавить сообщение в груповой чат (POST user/ptp_chat/message)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "id" : "15",
+        "description" : "Сохранить в бд",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -884,11 +1063,11 @@
         "x" : 239,
         "y" : 800
       }, {
-        "id" : "5",
+        "id" : "6",
         "x" : 239,
         "y" : 1400
       }, {
-        "id" : "8",
+        "id" : "10",
         "x" : 239,
         "y" : 2000
       } ],
@@ -897,16 +1076,17 @@
       "order" : 11,
       "relationships" : [ {
         "description" : "Аунтификация пользователя",
-        "id" : "10",
+        "id" : "12",
         "order" : "1",
         "response" : false
       }, {
-        "id" : "13",
+        "description" : "Поиск сообщений чата (GET user/ptp_chat/message)",
+        "id" : "17",
         "order" : "2",
         "response" : false
       }, {
-        "description" : "Получение PtP списка",
-        "id" : "15",
+        "description" : "загрузка сообщений из бд",
+        "id" : "19",
         "order" : "3",
         "response" : false
       } ]
@@ -939,7 +1119,7 @@
       "key" : "SystemContext-001",
       "order" : 1,
       "relationships" : [ {
-        "id" : "9"
+        "id" : "11"
       } ],
       "softwareSystemId" : "2"
     } ]
